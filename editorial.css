@@ -1,0 +1,64 @@
+.research-page .project-hero .hero-overlay {
+  justify-content: flex-end;
+}
+
+.research-page .bim-comparison {
+  margin-bottom: 0;
+}
+
+.research-page .bim-comparison figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--layout-gap);
+}
+
+.research-page .bim-comparison figcaption span:last-child {
+  text-align: right;
+}
+
+.research-page[data-project="bim-laser"] .research-section > .bim-technical {
+  --media-measure: var(--project-content-width);
+  margin-bottom: 0;
+}
+
+.research-page .bim-technical a {
+  display: block;
+  border-radius: 8px;
+  background: #fff;
+  cursor: zoom-in;
+}
+
+.research-page .bim-technical img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.research-page .bim-figure-zoom {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .research-page .project-hero .hero-overlay {
+    /* Keep the publication block at its original mobile position. */
+    --hero-title-lines: 3;
+    padding-block-start: calc(32px + var(--hero-clearance) + var(--hero-title-lines) * 36.15625px);
+  }
+
+  .research-page .bim-figure-zoom {
+    display: inline-block;
+    margin-top: 6px;
+  }
+}
+
+@media (width < 431px) {
+  .research-page .project-hero .hero-overlay { --hero-title-lines: 4; }
+}
+
+@media (width < 347px) {
+  .research-page .project-hero .hero-overlay { --hero-title-lines: 5; }
+}
+
+@media (width < 307px) {
+  .research-page .project-hero .hero-overlay { --hero-title-lines: 6; }
+}

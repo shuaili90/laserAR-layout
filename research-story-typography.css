@@ -1,0 +1,28 @@
+/* Story-specific list and metric formatting. The opt-in research-unified.css
+   owns heading, prose, caption and section rhythm for these two pages. */
+/* Retain the original section-label color; only its type scale changes. */
+.project-typography .research-section .section-label {
+  color: var(--research-secondary, var(--tw-prose-body, currentColor));
+}
+
+.project-typography .research-section .contribution-list {
+  margin: 8px 0 0;
+  padding-inline-start: 1.5em;
+}
+
+.project-typography .contribution-list > li {
+  margin-block: 0;
+  padding-inline-start: 0;
+}
+
+.project-typography .contribution-list > li + li {
+  margin-block-start: 4px;
+}
+
+.project-typography .sar-results :is(.stat-label, .stat-detail, .stat-count),
+.project-typography .bim-results dt {
+  margin: 0;
+  font-size: var(--caption-size);
+  font-weight: 400;
+  line-height: 1.4;
+}
